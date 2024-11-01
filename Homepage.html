@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Welcome To BeautyMind Website</title>
+  </head>
+  <body>
+    <header id="Row1"> 
+      <section id="R1C1">
+        <a href="Homepage.html"><img src="d:\ILHAM\KPMB\Semester 4\Object Oriented Programming (CSC 2744)\FINAL PROJECT OOP\Logo1.png" alt=""></a>
+      </section>
+      <section id="R1C2">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#Row3">Products Recommendation</a></li>
+          <li><a href="Product.html">All Product</a></li>
+          <li><a href="Wishlist.html">Wishlist</a></li>
+          <button style="float: right; margin-left: 10px;" onclick="buttonClicked()"><i class="fa fa-search"></i></button>
+          <input style="float: right;" type="text" id="beauty_input" placeholder="Enter brand">
+        </ul>
+      </section>
+    </header>
+    <section id="Row2">
+      <img src="d:\ILHAM\KPMB\Semester 4\Object Oriented Programming (CSC 2744)\FINAL PROJECT OOP\bigimg.jpg" alt="img"/>
+      <div id="textimg"><center>
+          <h1>BeautyMind Cosmetics</h1>
+          <h3>"Unlock Your Potential with Expert Tutoring"</h3></center>
+      </div>
+    </section>
+    <section id="Row3">
+      <div id="R3R1">
+        <center><h1>Products Recommendation</h1></center>
+      </div>
+      <div id="R3R2">
+        <div id="R3R2C1">
+          <aside class="filter-section">
+            <h2>Filter By</h2>
+            <!-- Brand Filter -->
+            <div>
+                <h3>Brand</h3>
+                <select id="brandFilter">
+                    <option value="">All Brands</option>
+                    <option value="almay">Almay</option>
+                    <option value="anna sui">Anna Sui</option>
+                    <option value="annabelle">Annabelle</option>
+                    <option value="cargo cosmetics">Cargo Cosmetics</option>
+                    <option value="clinique">Clinique</option>
+                    <option value="covergirl">Covergirl</option> 
+                    <option value="dr. hauschka">Dr. Hauschka</option>
+                    <option value="e.l.f.">E.L.F.</option>
+                    <option value="l'oreal">L'Oreal</option>
+                    <option value="marcelle">Marcelle</option>
+                    <option value="maybelline">Maybelline</option>
+                    <option value="milani">Milani</option>
+                    <option value="mineral fusion">Mineral Fusion</option>
+                    <option value="nyx">NYX</option>
+                    <option value="pacifica">Pacifica</option>
+                    <option value="physicians formula">Physicians Formula</option>
+                    <option value="pure anada">Pure Anada</option> 
+                    <option value="revlon">Revlon</option>
+                    <option value="smashbox">Smashbox</option>
+                    <option value="wet n wild">Wet N Wild</option>
+                </select>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div>
+                <h3>Price Range</h3>
+                <label>Min: $<input type="number" id="minPrice" min="0" value="0"></label><br>
+                <label>Max: $<input type="number" id="maxPrice" min="0" value="50"></label><br> <br>
+                <button onclick="applyFilters()">Apply Filters</button>
+            </div>
+        </aside>
+        </div>
+        <div id="data"></div>
+
+        <!-- Link to the external JavaScript file -->
+        <script src="homepage.js"></script>
+      </div>
+      
+    </section>
+  </body>
+  <footer id="footer">
+    <hr> <hr>
+      <div id="FRow1">
+        <div id="FR1C1">
+          <h4> <b>CONTACT</b></h4>
+          <p>6 1, Persiaran Bandar Rinching, Bandar Rinching Seksyen 6, 43500 Semenyih, Selangor</p>
+          <p>+60 123485692</p>
+          <p>BeautyMind_Cosmetics@yahoo.com</p>
+        </div>
+        <div id="FR1C2">
+          <h4> <b>USEFUL LINKS</b></h4>
+          <p><a href="#">Home</a></p>
+          <p><a href="#Row3">Products Recommendation</a></p>
+          <p><a href="Product.html">All Product</a></p>
+          <p><a href="wishlist.html">Wishlist</a></p>
+        </div>
+        <div id="FR1C3">
+          <h4><b>CONNECT</b></h4>
+          <a class="btn" href="https://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+          <a class="btn" href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
+          <a class="btn" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a> <br>
+          <a class="btn" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+          <a class="btn" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div id="Row2Footer">
+        Copyright © 2024 BeautyMind Cosmetics. All rights reserved.
+      </div>
+  </footer>
+</html>
